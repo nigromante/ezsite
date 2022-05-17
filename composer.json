@@ -1,0 +1,22 @@
+{
+    "name": "nigromante/ezsite",
+    "description": "ezsite PHP minimal MVC framework",
+    "authors": [
+        {
+            "name": "Julian Vidal",
+            "email": "julianvidal@live.cl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "doctrine/orm": "^2.12",
+        "symfony/yaml": "^5.4",
+        "twig/twig": "^3.3"
+    },
+    "autoload": {
+      "psr-4": {
+        "nigromante\\EzSite\\": "src/EzSite/"
+
+      }
+    }
+}
