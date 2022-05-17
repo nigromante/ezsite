@@ -84,7 +84,8 @@ class Main {
                 "Techa UTC" => $this->getDateGmt() ,
                 "Server" =>  $this->request->getServerName(),
                 "Server software " => $_SERVER[ "SERVER_SOFTWARE" ] , 
-                "PHP" => phpversion()  
+                "PHP" => phpversion() ,
+                "NODO_NOMBRE" => getenv( "NODO_NOMBRE" )  
             ],
 
             "Configuracion" => [
