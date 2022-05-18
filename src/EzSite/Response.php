@@ -119,6 +119,9 @@ class Response {
             $ret .=  "</ul>" ; 
         } 
         else {
+            if( $_t === 'password' ) {
+                $t = str_repeat( "*" , strlen( $t ) )   ;
+            }
             $ret .=   "<li> <i> {$_t} </i> <b> {$t} </b> </li>"  ; 
         }
         return $ret ;
